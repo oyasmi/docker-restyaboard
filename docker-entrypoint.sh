@@ -51,7 +51,7 @@ if [ "$1" = 'start' ]; then
 
   # service start
   service cron start
-  service php5-fpm start
+  service php7.2-fpm start
   service nginx start
   service postfix start
 

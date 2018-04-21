@@ -6,17 +6,13 @@ Build Restyaboard in Docker.
 * Restyaboard  
   http://restya.com/board/
 
-* Docker  
-  https://www.docker.com/
-
-
 Quick Start
 ------------------------------
 
 Build image and Run container using docker-compose.
 
 ``` bash
-git clone https://github.com/namikingsoft/docker-restyaboard.git
+git clone https://github.com/oyasmi/docker-restyaboard.git
 cd docker-restyaboard
 
 docker-compose up -d
@@ -29,7 +25,7 @@ Check URL
 ------------------------------
 
 ```
-http://(ServerIP):1234
+http://(ServerIP):7001
 
 Username: admin
 Password: restya

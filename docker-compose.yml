@@ -7,28 +7,29 @@ data:
   command: tail -f /dev/null
   restart: always
 
-elasticsearch:
-  image: elasticsearch
-  volumes_from:
-    - data
-  restart: always
+#elasticsearch:
+#  image: elasticsearch
+#  volumes_from:
+#    - data
+#  restart: always
 
 postgres:
   image: postgres
   environment:
     POSTGRES_USER: postgres
-    POSTGRES_PASSWORD: something
+    POSTGRES_PASSWORD: hjVl2!rGd
   volumes_from:
     - data
   restart: always
 
 restyaboard:
-  build: .
+#  build: .
+  image: oyasmi/restya
   links:
-    - elasticsearch:elasticsearch
+#    - elasticsearch:elasticsearch
     - postgres:postgres
   ports:
-    - 1234:80
+    - 7001:80
   volumes_from:
     - data
   restart: always
